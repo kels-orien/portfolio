@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {Button} from "./ui"
 
@@ -8,7 +7,7 @@ function App() {
     <div className="App">
        <Button>I'M AVAILABLE FOR HIRE</Button>
     </div>
-  );S
+  );
 }
 
 export default App;
