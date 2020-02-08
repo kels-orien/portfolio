@@ -2,7 +2,12 @@ import React from 'react';
 import './App.css';
 import arrowRight from "./img/arrow_right.svg"
 import downloadCloud from "./img/download_cloud.svg"
-import Code from "./img/code.svg"
+import Code from "./img/code.svg";
+import Person from "./img/person_avartar.svg"
+import Github from "./img/github.svg"
+import Twitter from "./img/twitter.svg"
+import LinkedIn from "./img/linkedin.svg"
+import Send from "./img/send.svg"
 import { 
   Header, 
   Container, 
@@ -35,6 +40,24 @@ import {
   WorkHeaderText,
   WorkExperience,
   WorkExpSection,
+  Footer,
+	FormContainer,
+	ContactSection,
+  FooterHeaderText,
+  FooterText,
+	FormSection,
+	FormSectionParagraph,
+	FormImage,
+	ContactForm,
+	ContactDiv,
+	FormInputField,
+	NameLabel,
+	Input,
+	FormTextArea,
+  FormButton,
+  FormButtonImage,
+	SocialMediaSection,
+	SocialMediaImg,
 } from "./ui"
 
 function App() {
@@ -49,8 +72,9 @@ function App() {
           </div>
           <div className ="menu">
           <div className = "menu-box">
-              <a className="menu-box-item">Hire Me</a>
+              <a className="menu-box-item">Contact Me</a>
               <a className="menu-box-item">Portfolio</a>
+              <a className="menu-box-item">About Me</a>
             </div>
           </div>
         </div>
@@ -147,6 +171,43 @@ I write acticles about frontend development in medium and other blogs.</AboutMeT
      </Skills>
       
      </Container>
+     <Footer>
+      <FormContainer>
+          <ContactSection>
+          <FooterHeaderText>Wanna Build Something</FooterHeaderText>
+          <FooterText>Exciting?</FooterText>
+          <FormSection>
+             <FormSectionParagraph>Please fill the form and I will reply ASAP</FormSectionParagraph>
+                <ContactDiv>
+                 <FormImage src={Person} alt="Illustration of an individual"/>
+                  <ContactForm action="https://formspree.io/kelvinorien@gmail.com" method="POST" name="contact">
+                  <FormInputField>
+                    <NameLabel>Name</NameLabel>
+                    <Input type="text" name="name" id="name" size="25" required="required"/>
+                  </FormInputField>
+
+                  <FormInputField>
+                    <NameLabel>Email</NameLabel>
+                    <Input type="email" name="email" id="email" size="25" required="required"/>
+                  </FormInputField>
+
+                  <FormTextArea name="message" id="message" cols="30" rows="10" placeholder="Type message here..." required="required"></FormTextArea>
+                  </ContactForm>
+                <FormButton>
+                  Submit
+                <FormButtonImage src={Send} alt="sending icon" id="send-icon"/>
+
+                </FormButton>
+                </ContactDiv>
+          </FormSection>
+          </ContactSection>
+          <SocialMediaSection>
+            <a href="https://twitter.com/kels_orien"><SocialMediaImg src={Twitter}></SocialMediaImg></a>
+            <a href="https://github.com/kels-orien"><SocialMediaImg src={Github}></SocialMediaImg></a>
+            <a href="https://ng.linkedin.com/in/oghenekohwo-orien-45718326"><SocialMediaImg src={LinkedIn}></SocialMediaImg></a>
+          </SocialMediaSection>
+      </FormContainer>
+     </Footer>
     </div>
   );
 }

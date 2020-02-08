@@ -10,11 +10,12 @@
 body {
     margin: 0px;
     color: rgb(5, 45, 73);
-    font-family: 'America',sans-serif;
+    font-family: Montserrat,Roboto,sans-serif;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    height: 100vh;
 }
 
 

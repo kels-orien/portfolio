@@ -264,9 +264,7 @@ export const AboutMeTextHeader = styled.h1`
 
 export const AboutMeTextParagraph = styled.p`
     text-align: left;
-    font-size: 1.2rem;
-    font-style: italic;
-    line-height: 1.5rem;
+    font-size: 1.4rem;
 }
 `
 export const SVGImageSection= styled.section`
@@ -423,3 +421,178 @@ export const ProjectsButton =  styled.a`
     line-height:2rem;
     margin-top: 3rem;
   `
+export const Footer = styled.footer`
+    padding-bottom: 6rem;
+    padding-top: 3rem;
+    background: rgb(5, 45, 73);
+    
+`
+
+export const ContactSection = styled.section`
+    color: #eeeeee;
+    margin-right: 5vw;
+    margin-left: 5vw;
+`
+
+export const FooterHeaderText = styled.h1`
+    font-size: 2rem;
+
+`
+export const FooterText = styled.h1`
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-family: Signika,sans-serif;
+
+`
+export const FormSection = styled.section`
+    
+        ${device.tablet`
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            ms-flex-pack: justify;
+            justify-content: space-between;`
+        }
+`
+export const FormSectionParagraph = styled.p`
+
+
+    ${device.tablet`
+        font-size: 2rem;
+        text-align: left;
+        -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+        -ms-flex-item-align: center;
+        align-self: center;
+    `  }
+`
+
+export const FormImage = styled.img`
+    vertical-align: middle;
+    width: 120px;
+    margin-bottom: 1rem;
+`
+
+export const FormContainer  = styled.div`
+    padding-bottom: 6rem;
+    padding-top: 3rem;
+    margin-top: 7rem;
+
+    ${device.mobileL`
+        padding-top: 2rem;
+        margin-top: 4.5rem;
+    `  }
+`
+export const ContactDiv = styled.div`
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    ${device.tablet`
+        flex-basis: 45%;
+    `  }
+`
+
+export const ContactForm = styled.form`
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    ${device.tablet`
+        flex-basis: 45%;
+    `  }
+`
+
+export const FormDiv =  styled.div`
+    margin-bottom: 1rem;
+`
+
+export const FormInputField = styled.div`
+    height: 35px;
+    max-height: 35px;
+    overflow: hidden;
+    border-top-left-radius: 7px;
+    margin-bottom: 1rem;
+    border-bottom-left-radius: 7px;`
+    
+
+
+export const NameLabel = styled.label`
+    color: #000000;
+    background: #eeeeee;
+    height: 100%;
+    padding: 1rem .6rem;;    
+`
+
+export const Input = styled.input`
+    border: none;
+    padding: .4rem;
+    font-size: .9rem;
+    height: 100%;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    color: black;
+`
+
+export const FormButtonImage =  styled.img`
+    width: auto;
+    vertical-align: middle;
+    margin: 0;
+    margin-left: .3rem;
+`
+
+export const FormTextArea = styled.textarea`
+    resize: none;
+    border-radius: 7px;
+    padding: .7rem;
+    color: black;
+`
+
+export const FormButton  = styled.button`
+    margin-top: 1rem;
+    border: none;
+    cursor: pointer;
+    background: #eeeeee;
+    color: #000000;
+    font-size: 1.2rem;
+    padding: .65rem .9rem;
+    border-radius: 3rem;
+`
+
+export const SocialMediaSection = styled.div`
+    width: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+
+    ${device.mobileL`
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    `  }
+` 
+
+export const SocialMediaImg = styled.img`
+    width: 40px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 20px 50px rgba(0,0,0,.425);
+    box-shadow: 0 20px 50px rgba(0,0,0,.425);
+`
