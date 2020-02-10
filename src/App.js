@@ -72,9 +72,9 @@ function App() {
           </div>
           <div className ="menu">
           <div className = "menu-box">
-              <a className="menu-box-item">Contact Me</a>
-              <a className="menu-box-item">Portfolio</a>
-              <a className="menu-box-item">About Me</a>
+              <a href="" className="menu-box-item">Contact Me</a>
+              <a href="" className="menu-box-item">Portfolio</a>
+              <a href="" className="menu-box-item">About Me</a>
             </div>
           </div>
         </div>
@@ -180,7 +180,7 @@ I write acticles about frontend development in medium and other blogs.</AboutMeT
              <FormSectionParagraph>Please fill the form and I will reply ASAP</FormSectionParagraph>
                 <ContactDiv>
                  <FormImage src={Person} alt="Illustration of an individual"/>
-                  <ContactForm action="https://formspree.io/kelvinorien@gmail.com" method="POST" name="contact">
+                  <ContactForm action="https://formspree.io/xeqgldqk" method="POST" name="Contact Me">
                   <FormInputField>
                     <NameLabel>Name</NameLabel>
                     <Input type="text" name="name" id="name" size="25" required="required"/>

@@ -29,6 +29,7 @@ a {
     text-decoration: none;
     cursor: pointer;
     background-color: transparent;
+    color: rgb(5, 45, 73);
 }
 
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
@@ -49,8 +50,8 @@ button, input, optgroup, select, textarea {
 
 img[alt=profile-photo] {
   width: 350px;
-  -webkit-box-shadow: 22px 22px 0 var(--primary-brown);
-  box-shadow: 22px 22px 0 var(--primary-brown);
+  -webkit-box-shadow: 22px 22px 0 #eeeeee;
+  box-shadow: 22px 22px 0 #eeeeee;
 }
 
 
