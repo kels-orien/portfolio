@@ -8,6 +8,7 @@ import Github from "./img/github.svg"
 import Twitter from "./img/twitter.svg"
 import LinkedIn from "./img/linkedin.svg"
 import Send from "./img/send.svg"
+import { Link, animateScroll as scroll } from "react-scroll";
 import { 
   Header, 
   Container, 
@@ -63,28 +64,51 @@ import {
 function App() {
   return (
     <div className="App">
-      <Header>
+      <Header >
         <div className="logo-box">
           <div className="icon">
 
-            <a className ="icon-name">KORIEN</a>
+            <Link
+              activeClass="active"
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className ="icon-name">KORIEN</Link>
             
           </div>
           <div className ="menu">
           <div className = "menu-box">
-              <a href="" className="menu-box-item">Contact Me</a>
-              <a href="" className="menu-box-item">Portfolio</a>
-              <a href="" className="menu-box-item">About Me</a>
+              <Link activeClass="active"
+                to="contactme"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500} className="menu-box-item">Contact Me</Link>
+              <Link activeClass="active"
+                to="section2"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500} className="menu-box-item">Portfolio
+                </Link>
+              <Link activeClass="active"
+                to="aboutme"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500} className="menu-box-item">About Me</Link>
             </div>
           </div>
         </div>
 
         
       </Header>
-      <Container>
+      <Container id="home">
       <Main>
         
-          <Profile>
+          <Profile id="aboutme">
             
               <ProfileImageDiv>
                 <ProfileImage alt="alt=profile-photo" src="https://res.cloudinary.com/dofiasjpi/image/upload/v1580586831/portfolio/headshot.jpg"/>    
@@ -106,7 +130,7 @@ function App() {
         
 
       </Main>
-      <AboutMe>
+      <AboutMe id="aboutme">
         <AboutMeText>
           <AboutMeTextHeader>About Me</AboutMeTextHeader>
           <AboutMeTextParagraph>I build delightful user interfaces with a professsional and delicate touch. 
@@ -173,7 +197,7 @@ I write acticles about frontend development in medium and other blogs.</AboutMeT
      </Container>
      <Footer>
       <FormContainer>
-          <ContactSection>
+          <ContactSection id="contactme">
           <FooterHeaderText>Wanna Build Something</FooterHeaderText>
           <FooterText>Exciting?</FooterText>
           <FormSection>
