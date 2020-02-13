@@ -34,3 +34,13 @@ export const device = Object.keys(size).reduce((acc, key) => {
   `
   return acc
 }, {})
+
+
+export const deviceMax = Object.keys(size).reduce((acc, key) => {
+  acc[key] = style => `
+    @media (max-width: ${size[key]}) {
+      ${style};
+    }
+  `
+  return acc
+}, {})

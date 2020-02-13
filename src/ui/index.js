@@ -1,31 +1,7 @@
 import styled from "styled-components";
-import {device} from "./device"
+import {device, deviceMax} from "./device"
 
-export const Button = styled.button`
-    backface-visibility: hidden;
-    background-color: #ec452e;
-    box-sizing: border-box;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: 700;
-    opacity: unset;
-    position: relative;
-    pointer-events: unset;
-    text-align: center;
-    text-transform: uppercase;
-    user-select: none;
-    white-space: unset;
-    color: rgb(255, 255, 255) !important;
-    font-size: 1rem !important;
-    border-radius: 0px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #f83d24;
-    border-image: initial;
-    padding: 1rem 1.5rem;
-    text-decoration: none;
-    transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
-`
+
 export const Header = styled.header`
     height: 4.4rem;
     z-index: 1100;
@@ -143,6 +119,11 @@ export const Container = styled.div`
 
 export const Profile = styled.section`
     display: flex;
+
+    ${deviceMax.mobileL`
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;`
+        }
 `
 
 
@@ -151,6 +132,10 @@ export const ProfileImage = styled.img`
     box-shadow: 22px 22px 0 #EFEEEE;
     ${device.laptop`
         width: 450px;`
+        }
+
+        ${deviceMax.mobileL`
+             width: 250px;`
         }
 `
 
@@ -186,7 +171,7 @@ export const ProfileText = styled.div`
         margin-bottom: 4rem;`
     }
 
-    ${device.mobileL`
+    ${deviceMax.mobileL`
     margin-top: 2.3rem;
     margin-right: 5vw;`
     }
@@ -217,8 +202,23 @@ export const ProfileDownloadSection =  styled.div`
     transition: transform .2s,-webkit-transform .2s;
     -webkit-transition-delay: .01s;
     transition-delay: .01s;
+    margin-top: 2rem;
+
+    ${deviceMax.mobileL`
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    ;`
+    }    
+
+    &:hover {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+      }
+
+    
 `
-export const ProfileButton = styled.div`
+export const ProfileButton = styled.a`
     padding: .7rem 1rem;
     margin-top: 10px;
     border-radius: 25px;
