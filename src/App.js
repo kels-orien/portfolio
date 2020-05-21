@@ -26,26 +26,26 @@ function App() {
   return (
     <div className="App">
       <Top/>
-      <Container id="home">
-        <Main>
+        <Container id="home">
+          <Main>
             <Profile id="aboutme">   
               <ProfileImageDiv>
                 <ProfileImage alt="alt=profile-photo" src="https://res.cloudinary.com/dofiasjpi/image/upload/v1580586831/portfolio/headshot.jpg"/>    
               </ProfileImageDiv>
               <Dot/>
               <ProfileText><FontThick>Hi <span role="img" aria-label="hello emoji">👋,</span></FontThick><PText>I'm Kohwo Orien a front end engineer currently living in Warri, Nigeria.</PText>
-                <ProfileDownloadSection>
+              <ProfileDownloadSection>
                   <ProfileButton>Résumé
                     <ProfileButtonImg alt="arrow facing right direction" src={downloadCloud}/>
                   </ProfileButton>
             </ProfileDownloadSection>
             </ProfileText>
           </Profile>
-      </Main>
-      <About/>
+        </Main>
+        <About/>
      </Container>
      <Footer>
-      <ContactMe/>
+        <ContactMe/>
      </Footer>
     </div>
   );
