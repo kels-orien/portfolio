@@ -35,7 +35,7 @@ function App() {
               <Dot/>
               <ProfileText><FontThick>Hi <span role="img" aria-label="hello emoji">👋,</span></FontThick><PText>I'm Kohwo Orien a front end engineer currently living in Warri, Nigeria.</PText>
               <ProfileDownloadSection>
-                  <ProfileButton href="https://docs.google.com/document/d/196UyPfl3TSczR_RdK0ifuUFuxcNGw05-a1itgcYliuo/edit?usp=sharing">Résumé
+                  <ProfileButton href="https://drive.google.com/file/d/1Z0iWL5aVaaV3cN7hpxOuQx63EUsykQx6/view?usp=sharing">Résumé
                     <ProfileButtonImg alt="arrow facing right direction" src={downloadCloud}/>
                   </ProfileButton>
             </ProfileDownloadSection>
